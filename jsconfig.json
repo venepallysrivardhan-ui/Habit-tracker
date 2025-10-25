@@ -1,10 +1,17 @@
 {
-	"compilerOptions": {
-		"target": "ES2024",
-		"module": "Node16",
-		"moduleResolution": "node16",
-		"resolveJsonModule": true,
-		"jsx": "preserve"
-	},
-	"exclude": ["node_modules"]
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "Node16",
+    "moduleResolution": "node16",
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+
+    // Recommended additions:
+    "strict": true,                      // Enables all strict type-checking options
+    "esModuleInterop": true,            // Allows default imports from CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Helps avoid case-sensitive import issues
+    "skipLibCheck": true,               // Speeds up compilation by skipping type checks on .d.ts files
+    "allowSyntheticDefaultImports": true // Useful for compatibility with Babel or non-ESM packages
+  },
+  "exclude": ["node_modules"]
 }
